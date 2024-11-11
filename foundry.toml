@@ -4,3 +4,12 @@ out = "out"
 libs = ["lib"]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[rpc_endpoints]
+reticulum = { url = "https://evm-rpc-http-reticulum.galactica.com/", chain = 9302 }
+
+[etherscan]
+reticulum = { url = "https://explorer-reticulum.galactica.com/api", key = "something", chain = 9302 }
+
+[profile.chains]
+reticulum = 9302
