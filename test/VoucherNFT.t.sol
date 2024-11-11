@@ -8,13 +8,7 @@ contract VoucherNFTTest is Test {
     VoucherNFT public nft;
 
     function setUp() public {
-        nft = new VoucherNFT(
-            "Voucher NFT",
-            "VOUCHER",
-            "https://voucher.com/voucher",
-            100,
-            address(this)
-        );
+        nft = new VoucherNFT("Voucher NFT", "VOUCHER", "https://voucher.com/voucher", 100, address(this));
     }
 
     // function test_Increment() public {
