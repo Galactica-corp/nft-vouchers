@@ -12,7 +12,13 @@ contract VoucherNFTScript is Script {
     function run() public {
         vm.startBroadcast();
 
-        nft = new VoucherNFT();
+        nft = new VoucherNFT(
+            "Voucher NFT",
+            "VOUCHER",
+            "https://voucher.com/voucher",
+            10,
+            address(this)
+        );
 
         vm.stopBroadcast();
     }
