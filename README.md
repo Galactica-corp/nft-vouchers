@@ -48,10 +48,10 @@ Then, dry-run the script to check the simulated logs and on-chain traces:
 $ forge script script/Transfer.s.sol -vvvv --rpc-url reticulum --account MY_WALLET_NAME
 ```
 
-Check the output. If everything looks good, run it again with the `--broadcast` flag to submit the transactions on chain:
+Check the output. If everything looks good, run it again with the `--broadcast` and `--slow` flags to submit the transactions on chain and wait for the server to update the nonce after each transaction:
 
 ```shell
-$ forge script script/Transfer.s.sol --broadcast -vvvv --rpc-url reticulum --account MY_WALLET_NAME
+$ forge script script/Transfer.s.sol -vvvv --rpc-url reticulum --account MY_WALLET_NAME --broadcast --slow
 ```
 
 ### Format
