@@ -9,9 +9,18 @@ fs_permissions = [{ access = "read", path = "./script/inputData" }]
 
 [rpc_endpoints]
 reticulum = { url = "https://evm-rpc-http-reticulum.galactica.com/", chain = 9302 }
+arbitrum = { url = "https://arb1.arbitrum.io/rpc/", chain=42161 }
+arbitrum_sepolia = { url = "https://sepolia-rollup.arbitrum.io/rpc/", chain=421614 }
+polygon = { url = "https://polygon-rpc.com/", chain=137 }
 
 [etherscan]
 reticulum = { url = "https://explorer-reticulum.galactica.com/api", key = "something", chain = 9302 }
+arbitrum = { url = "https://api.etherscan.io/v2/api", key = "${ETHERSCAN_API_KEY}", chain=42161 }
+arbitrum_sepolia = { url = "https://api.etherscan.io/v2/api", key = "${ETHERSCAN_API_KEY}", chain=421614 }
+polygon = { url = "https://api.etherscan.io/v2/api", key = "${ETHERSCAN_API_KEY}", chain=137 }
 
 [profile.chains]
 reticulum = 9302
+arbitrum = 42161
+arbitrum_sepolia = 421614
+polygon = 137
